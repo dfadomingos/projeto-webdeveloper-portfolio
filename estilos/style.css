@@ -1,62 +1,131 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family: 'Prata';
+    src:url(../fontes/Prata/Prata-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url(../fontes/Inter/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root{
+    --fonte-padrao: 'Inter', sans-serif;
+    --fonte-destaque: 'Prata', serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-html, body{
-    height: 100vh;
-    width: 100vw;
-    color: white;
+html,body{
     background-color: black;
-}
-
-header > p#left{
-    display: block;
-    padding: 10px;
-    text-align: left;
-}
-
-header > p#right{
-    display: block;
-    padding: 10px;
-    text-align: right;
-       
-}
-
-menu > ul {
-    list-style-type: none;
-}
-
-menu > ul > li > a{
-    display: block;
-    padding: 10px;
-    text-decoration: none;
     color: white;
-    border: 2px solid gray;
-    text-align: center;
 }
 
-li{
-    display: inline-block;
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
+a:hover{
+    opacity: 0.7;
+}
 
+.logo{
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;    
+}
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
 
+    background-color: lightblue;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 30px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px)
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
 
 main{
-    position: relative;
+    padding: 20px;
 }
 
-
-
-.backcolor1{
-    background-color: black;
+#section1{
+    font-family: var(--fonte-padrao);
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.87);
 }
 
-.backcolor2{
-    background-color: rgb(105, 105, 105);
+#section1 h1{
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
 }
+
+#section1 p{
+    margin-top: 20px;
+    line-height: 25px;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+#section2{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+}
+
+#section2 > img{
+    width: 150px;
+    height: 2em;      
+    
+}
+
