@@ -125,7 +125,38 @@ main{
 
 #section2 > img{
     width: 150px;
-    height: 2em;      
+    height: 2em;    
+}
+
+#section3{
+    border: 1px solid red; 
+    max-width: 100%;
+}
+
+#section3 div#spense{
+    max-width: 530px;
+    height: auto; 
     
+    justify-content: right;
+    border: 1px solid green;
+}
+
+#section3 div#spense > img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#section3 div#yelp{
+    max-width: 530px;
+    height: auto;      
+}
+
+#section3 div#yelp > img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
