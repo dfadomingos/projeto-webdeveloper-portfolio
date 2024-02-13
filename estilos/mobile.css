@@ -6,6 +6,7 @@
     }
 
     .nav-list{
+        overflow-x: hidden;
         position: absolute;
         top: 8vh;
         right: 0;
