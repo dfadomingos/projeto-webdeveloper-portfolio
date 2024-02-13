@@ -1,2 +1,65 @@
 @charset "UTF-8";
 
+@media screen and (min-width:1025px) {
+    
+    #section3{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+       
+    html,body{        
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        overflow-x: hidden;
+    }
+
+    header a#mobile-hide{
+        display: block;
+        background-color: rgb(235, 235, 31);
+        color: black;
+        font-family: var(--fonte-padrao);
+        font-size: 1em;
+        font-weight: normal;
+        text-align: center;   
+        width: 140px;
+        height: 40px;
+        padding-top: 8px; 
+        margin-right: 80px;           
+    }
+
+    header nav{
+        padding-left: 80px; 
+    }
+
+
+    main{
+        padding: 0px;
+        margin: 0px;
+        max-width: 1300px;
+        
+    }
+
+    section{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    #section3 div#spense{
+        max-width: calc(45%);
+        align-self: center;
+    }
+
+    #section3 div#yelp{
+        max-width: calc(45%);
+        align-self: center;
+        padding-top: 37px;
+    }
+
+    #section4 { 
+        margin-left: 0px;
+        margin-right: -80px;
+    }        
+}
