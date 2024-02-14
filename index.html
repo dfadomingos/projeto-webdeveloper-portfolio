@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="estilos/tablet.css">
     <link rel="stylesheet" href="estilos/desktop.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <nav>
         <a href="#" class="logo">Johnathan Speeter</a>
          
-        <div class="mobile-menu">
+        <div class="mobile-menu" onclick="clickMenu()">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-            <ul class="nav-list">
+            <ul class="nav-list" id="itens">
                 <li><a href="#">Articles</a></li>
                 <li><a href="#">Chats</a></li>
                 <li><a href="#">Awards</a></li>
@@ -148,7 +148,24 @@
     ".nav-list li",
     );
     mobileNavbar.init();
-        
+      
+    
+    function clickMenu(){
+           if (itens.style.display == 'flex'){
+            itens.style.display = 'none'
+           } else{
+            itens.style.display = 'flex'
+           }
+        }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 1024){
+                itens.style.display = 'flex'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+
     </script>
 
 
