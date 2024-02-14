@@ -59,7 +59,19 @@
     }
 
     #section4 { 
+        display: flex;
         margin-left: 0px;
         margin-right: -80px;
-    }        
+        justify-content: space-between;
+    }
+    
+    #section4 div#coluna1{
+        max-width: 45%;
+        
+    }
+
+    #section4 div#coluna2{
+        max-width: 45%;
+        margin-top: 50px;
+    }
 }
