@@ -8,6 +8,11 @@
         box-sizing: border-box;        
     }
 
+    header{
+        padding-left: 60px;
+        padding-right: 30px;
+    }
+
     main{
         padding: 0px;
     }
@@ -18,7 +23,7 @@
     }
 
     #section1{
-        max-width: 100%;
+        max-width: 610px;
     }
 
     #section2{
@@ -34,6 +39,8 @@
     }
 
     footer{
+        padding-left: 60px;
+        padding-right: 30px;
         margin: 0px;
     }
 

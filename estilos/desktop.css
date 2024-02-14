@@ -29,7 +29,7 @@
         padding-top: 8px; 
         margin-right: 80px;           
     }
-
+    
     header nav{
         padding-left: 80px; 
     }
@@ -73,5 +73,10 @@
     #section4 div#coluna2{
         max-width: 45%;
         margin-top: 50px;
+    }
+
+    footer{
+        padding-left: 60px;
+        padding-right: 30px;
     }
 }
