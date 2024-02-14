@@ -82,6 +82,7 @@ nav{
       overflow-x: hidden;
     }
     .nav-list {
+      display: none;
       position: absolute;
       top: 8vh;
       right: 0;
