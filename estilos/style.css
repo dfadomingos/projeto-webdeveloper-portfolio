@@ -85,9 +85,9 @@ nav{
       position: absolute;
       top: 8vh;
       right: 0;
-      width: 50vw;
-      height: 92vh;
-      background: black;
+      width: 30vw;
+      height: 80vh;
+      background: rgb(90, 89, 89);
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
